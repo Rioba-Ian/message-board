@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1 Hello
-  p.text-gray-200 Welcome to #{title}
+  h1 Hello astronaut
+  p.text-gray-200 Welcome to #{title}, You can add your message 
+  a(href="/new-message") here 
+
+  each message in messages 
+    h2= message.text 
+    p Sent by #{message.user} at #{message.added}
