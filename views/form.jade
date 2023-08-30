@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  form(action="/new", method="post", class="space-y-16")
+    input(type="text", name="text", class="w-full p-2 border border-gray-300 rounded" required)
+    p Message 
+    input(type="text", name="user", class="w-full p-2 border border-gray-300 rounded" required)
+    p User
+    input(type="submit", value="Submit", class="btn")

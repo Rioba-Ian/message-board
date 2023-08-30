@@ -5,3 +5,38 @@
 h1 {
   @apply text-3xl text-gray-800;
 }
+
+body {
+  @apply bg-gray-200 text-gray-700 max-w-3xl mx-auto;
+}
+
+.container {
+  @apply mx-auto max-w-md px-4 py-8;
+}
+
+.btn {
+  @apply px-4 py-2 bg-blue-500 text-white rounded;
+}
+
+.btn:hover {
+  @apply bg-blue-700;
+}
+
+a {
+  @apply text-blue-700 underline;
+}
+
+input[type="text"] {
+  @apply py-2 px-8 my-4 rounded-md;
+}
+
+input[type="text"]:nth-child(2) {
+  @apply mb-6;
+}
+
+.message-div {
+  padding: 1.6em 0;
+  margin: 1em 0;
+
+  background-color: #fff;
+}
